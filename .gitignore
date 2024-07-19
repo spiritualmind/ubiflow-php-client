@@ -1,0 +1,7 @@
+#IDE project files
+.buildpath
+.project
+.settings/
+.idea/
+.config
+.cache

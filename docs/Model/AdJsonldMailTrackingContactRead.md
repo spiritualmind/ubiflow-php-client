@@ -1,0 +1,14 @@
+# AdJsonldMailTrackingContactRead
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**context** | [**OneOfAdJsonldMailTrackingContactReadContext**](OneOfAdJsonldMailTrackingContactReadContext.md) |  | [optional] 
+**id** | **string** |  | [optional] 
+**type** | **string** |  | [optional] 
+**advertiser** | **string** | The advertiser owning the ad. | 
+**reference** | **string** | The unique identifier of the ad, from the point of vue of the advertiser owning the ad. This string is unique for a given advertiser.  The reference is an identifier used by all parties : the advertiser, the software editor, web portals. That is why once an ad has been created with a given reference, this reference cannot be modified anymore.  This string should not contain any character forbidden in file systems or urls. The reference originally given when the ad is created may thus be modified by Ubiflow : unsupported characters are replaced by un underscore (\&quot;_\&quot;). But in such cases you can still use the original reference when updating an ad. | 
+**status** | **string** | The status of the ad.  Available status are :  - \&quot;B\&quot; : The ad has been created, but is not yet activated :       it is currently used by the advertiser,      but it may not be published on web portals as long as it is not activated.  - \&quot;A\&quot; : The ad is active :       it is currently used by the advertiser, and may be published on web portals.       This state is the most commonly used for ads.  - \&quot;V\&quot; : The product of the ad has been sold, but the ad is still active,       because the advertiser wants to communicate on the products he sold.       The ad may be published, but only on web portals who allow such ads.  - \&quot;S\&quot; : The ad has been deleted by the advertiser.       It will be removed from Ubiflow SI over the next few days.  - \&quot;M\&quot; : The ad is a model of ads :       a sort of ad which contains generic data common to many other ads.       It may not be published on web portals.       A model ad may be used by an advertiser who sells products which are very similar,      and differ by only few characteristics.       Example in the real estate universe :      a builder of detached houses sells many houses which are almost all identical.       Example in the vehicles universe :      a car dealer sells cars which are almost all identical (the color or a few options may differ).       In practice, such ads are created by advertisers who don&#x27;t use any software,      but use data entry directly on Ubiflow&#x27;s platform :      model ads enable them to gain some precious time. | 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

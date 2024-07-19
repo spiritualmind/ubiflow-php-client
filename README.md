@@ -7,7 +7,7 @@ Documentation : [Classified API](https://api-classifieds.ubiflow.net/)
 
 - API version: 1.0.0
 - Package version: _See Tags and Releases_
-- 
+
 ## Requirements
 
 PHP 5.5 and later
